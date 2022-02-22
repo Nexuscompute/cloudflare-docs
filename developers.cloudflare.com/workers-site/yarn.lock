@@ -47,10 +47,10 @@ basic-auth@^2.0.1:
   dependencies:
     safe-buffer "5.1.2"
 
-lilredirector@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/lilredirector/-/lilredirector-0.5.1.tgz#296212455cb4a7f8356f639c01b64536869ab02b"
-  integrity sha512-tqjwxceVvQug6cpe1lTEC/n5gb1oOsOe5SnpOiKu15c5ZX4INy6DR/b5kCgbyun4WEZdUeI7pLQgfRdjUG04KQ==
+lilredirector@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/lilredirector/-/lilredirector-0.5.3.tgz#435972b170c5387ec8bcfa389912721ca33a87ef"
+  integrity sha512-2IN4ZsaaGsVVIwnAajF2WEjZA7A7TCezI3Gyyj/Qb3Vw7LEhZCH7CKAgYSEn6WTKcewDL6sJLsVGPK5l3UCAww==
   dependencies:
     "@cloudflare/workers-types" "^2.0.0"
     "@types/basic-auth" "^1.1.3"
