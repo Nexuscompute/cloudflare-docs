@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-Data Loss Prevention allows you to capture, store, and view the data that triggered a specific DLP policy for use as forensic evidence. Users on all plans can [log the payload](#log-the-payload-of-matched-policies) of matched HTTP requests in their Cloudflare logs. Additionally, Enterprise users can [configure a Logpush job](#send-http-requests-to-logpush-destination) to send copies of entire matched HTTP requests to storage destinations.
+Data Loss Prevention allows you to capture, store, and view the data that triggered a specific DLP policy for use as forensic evidence. Users on all plans can [log the payload](#log-the-payload-of-matched-rules) of matched HTTP requests in their Cloudflare logs. Additionally, Enterprise users can [configure a Logpush job](#send-http-requests-to-logpush-destination) to send copies of entire matched HTTP requests to storage destinations.
 
 ## Log the payload of matched rules
 
@@ -43,7 +43,7 @@ Data Loss Prevention will now store a portion of the payload for HTTP requests t
 3. Select **Decrypt Payload Log**.
 4. Enter your private key and select **Decrypt**.
 
-You will see the [ID of the matched DLP Profile](/api/operations/dlp-profiles-list-all-profiles) followed by the decrypted payload. Note that DLP currently logs only the first match.
+You will see the [ID of the matched DLP Profile](/api/resources/zero_trust/subresources/dlp/subresources/profiles/methods/list/) followed by the decrypted payload. Note that DLP currently logs only the first match.
 
 :::note
 Neither the key nor the decrypted payload will be stored by Cloudflare.

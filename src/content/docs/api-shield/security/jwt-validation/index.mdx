@@ -60,6 +60,10 @@ If you expect that two different JWTs should be present in a request and you wan
 
 If you expect to migrate between two different identity providers, you must create two different token configurations and two different validation rules, each corresponding to its own configuration. With this setup, you can change the action for different validation rules depending on the state of your migration.
 
+### JSON Web Tokens with the `Bearer` prefix
+
+API Shield will verify JSON Web Tokens regardless of whether or not they have the `Bearer` prefix.
+
 ## Availability
 
 JWT Validation is available for all API Shield customers. Enterprise customers who have not purchased API Shield can preview [API Shield as a non-contract service](https://dash.cloudflare.com/?to=/:account/:zone/security/api-shield) in the Cloudflare dashboard or by contacting your account team.
@@ -69,4 +73,4 @@ JWT Validation is available for all API Shield customers. Enterprise customers w
 Currently, the following known limitations exist:
 
 1. JWT Validation only operates on JWTs sent in client request headers or cookies. If your clients send in JWTs in a `POST` body, direct that feedback to your account team.
-2. JWT Validation only operates for <GlossaryTooltip term="API endpoint">endpoints</GlossaryTooltip> (host, method, and path) added to Endpoint Management. You can add all of your endpoints to endpoint management through [API Discovery](/api-shield/management-and-monitoring/#add-endpoints-from-api-discovery), [Schema Validation](/api-shield/management-and-monitoring/#add-endpoints-from-schema-validation), [manually via the Cloudflare dashboard](/api-shield/management-and-monitoring/#add-endpoints-manually), or via the [API](/api/operations/api-shield-endpoint-management-add-operations-to-a-zone).
+2. JWT Validation only operates for <GlossaryTooltip term="API endpoint">endpoints</GlossaryTooltip> (host, method, and path) added to Endpoint Management. You can add all of your endpoints to endpoint management through [API Discovery](/api-shield/management-and-monitoring/#add-endpoints-from-api-discovery), [Schema Validation](/api-shield/management-and-monitoring/#add-endpoints-from-schema-validation), [manually via the Cloudflare dashboard](/api-shield/management-and-monitoring/#add-endpoints-manually), or via the [API](/api/resources/api_gateway/subresources/operations/methods/create/).
